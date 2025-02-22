@@ -5,7 +5,37 @@
   overflow-x: hidden;
 }
 
+@media (max-width:700px){
+   #navbar h1{
+   font-size: 18px !important;
+   }
+   #navbar ul li a {
+    font-size: 16px;
+   }
+   .social{
+    height: 100px;
+   }
+   #projects hr {
+    margin-top:20px !important;
+   }
+   #gallery{
+    margin: 0 !important;
+   }
+   footer p{
+    font-size: 15px;
+   }
+   .social{
+    margin: 7px;
+    font-size: 22px !important;
+   }
+   .social img{
+    width: 22px;
+   }
+}
 
+a{
+  text-decoration: none;
+}
 
 html{
   width: 100%;
@@ -33,18 +63,19 @@ header{
 
 nav h1{
   margin-left: 25px;
-  width: 50%;
+  width: 85%;
   font-size: 28px;
   font-family: "Poppins", sans-serif;
+  text-shadow: #070809 1px 5px 5px;
 }
 #title{
   color: white;
-  text-decoration: none;
+  
 }
 
 
 
-nav {
+#navbar {
   background-color: #1E1E2E;
   display: flex;
   position: fixed;  
@@ -84,9 +115,7 @@ nav ul li:hover{
 
 nav ul li a {
   color: white;
-  text-decoration: none;
   font-family: "Poppins", sans-serif;
-  font-size: 16px;
   font-weight: 500;
   list-style: none; 
   font-size: 20px;
@@ -94,7 +123,7 @@ nav ul li a {
 }
 nav ul li a:visited {
   color: white;
-  text-decoration: none;
+  
 }
 
 /* Background styling */
@@ -171,7 +200,7 @@ nav ul li a:visited {
   place-items: center;
 }
 
-.container {
+.project-tile {
   cursor: pointer;
   margin: 20px;
   width: 400px;
@@ -185,7 +214,7 @@ nav ul li a:visited {
 }
 
 
-.container img{
+.project-tile img{
   
   width: 100%;
   height: 100%;
@@ -193,7 +222,7 @@ nav ul li a:visited {
   overflow: hidden;
   object-fit: fill;
 }
-.container p {
+.project-tile p {
     height: 70px;
     display: flex;
     font-size: 19px;
@@ -232,8 +261,6 @@ nav ul li a:visited {
   top:5px;
   margin-right: 5px;
   color: white;
-  width: 27px;
-  height: 27px;
   box-shadow: #181c21  1px 3px 5px;
 }
 #socials{
@@ -248,7 +275,7 @@ nav ul li a:visited {
   justify-content: space-evenly;
   margin: 90px 0 150px 0px;
   overflow: hidden;
-  height:50px;
+  height:70px;
 }
 .sub{
   color: white;
@@ -268,11 +295,10 @@ nav ul li a:visited {
 .social{
   font-size: 27px;
   font-weight: bold;
-  text-decoration: none;
   display: inline-block;
   position: relative;
   transition: transform 0.3s ease-in-out;
-  ;
+  
 }
 .social:hover{
   transform:translateY(3px);
@@ -288,12 +314,11 @@ nav ul li a:visited {
 .social a {
   color: white;
   text-shadow: #181c21  1px 3px 2px ;
-  text-decoration: none;
 }
 footer{
+  
   display:flex;
   height: 100px;
-  margin: 0 200px 0 200px;
   justify-content: space-between;
   align-items: center;
   font-size: 18px;
@@ -303,4 +328,5 @@ footer{
 }
 footer p {
   opacity: 0.75;
+  padding:0 10px 0 10px;
 }
