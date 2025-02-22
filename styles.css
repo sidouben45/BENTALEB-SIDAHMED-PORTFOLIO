@@ -9,12 +9,27 @@
 @media (max-width:700px){
    #navbar h1{
    font-size: 18px !important;
+   text-align: center;
+   position: relative;
+   right: 30px;
+   }
+   #navbar ul {
+    margin-right: 10px;
    }
    #navbar ul li a {
     font-size: 16px;
    }
+   #welcome-section h1 ,#socials h1{
+    font-size: 3rem !important;
+   }
+   #projects h2 {
+    font-size: 2rem !important;
+   }
    .social{
     height: 100px;
+   }
+   #projects{
+    padding:0 30px 0 30px;
    }
    #projects hr {
     margin-top:20px !important;
@@ -26,11 +41,11 @@
     font-size: 15px;
    }
    .social{
-    margin: 7px;
-    font-size: 22px !important;
+    margin: 0px;
+    font-size: 20px !important;
    }
    .social img{
-    width: 22px;
+    width: 20px;
    }
 }
 
@@ -60,24 +75,27 @@ header{
   width: 100vw;
   height: 10vh;
   margin: 0;
+
 }
 
 nav h1{
   margin-left: 25px;
-  width: 85%;
+  width: 75%;
   font-size: 28px;
   font-family: "Poppins", sans-serif;
   text-shadow: #070809 1px 5px 5px;
 }
 #title{
-  color: white;
+  color: #E2E8F0;
   
 }
 
 
 
 #navbar {
-  background-color: #1E1E2E;
+  background: rgba(10, 10, 20, 0.9); /* Slight transparency */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Soft shadow */
+  backdrop-filter: blur(10px);
   display: flex;
   position: fixed;  
   height: 10vh;
@@ -85,7 +103,6 @@ nav h1{
   align-items: center;
   width: 100%;
   margin: 0;
- 
   
 }
 
@@ -98,6 +115,7 @@ nav ul {
   width: 100vw;
   height: 10vh;
   justify-content: flex-end;
+ 
 }
 
 
@@ -111,11 +129,12 @@ nav ul li {
 }
 
 nav ul li:hover{
-  background-color: aquamarine;
+  color: #00bcd4; /* Cyan accent */
+    text-decoration: underline;
 }
 
 nav ul li a {
-  color: white;
+  color: #E2E8F0;
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   list-style: none; 
@@ -123,7 +142,7 @@ nav ul li a {
   
 }
 nav ul li a:visited {
-  color: white;
+  color: #E2E8F0;
   
 }
 
@@ -138,27 +157,28 @@ nav ul li a:visited {
   font-family: Raleway;
   width: 100vw;
   height:100vh;
-  background: linear-gradient(90deg,
-  rgb(47, 47, 48)10%,
-  rgb(32, 32, 36)
-  );
+  /* background: linear-gradient(120deg, #141E30, #243B55); */
   display: flex;
+  background: linear-gradient(180deg, #141e30, #243b55); /* Smooth gradient */
   flex-direction: column;
   justify-content: center;
   align-items: center;  
   text-align: center;
 }
 #welcome-section h1 ,#socials h1{
-  font-size:60px;
-  font-weight: bold;
-  color: white;
+  padding: 0;
+  font-size:4rem;
+  font-weight: 800;
+  width: 100%;
+  color: #E2E8F0;
   font-family:"Raleway", sans-serif;
+  text-shadow: 0 0 4px rgba(255, 255, 255, 0.8);
+
 }
 #welcome-section p{
-  font-size:27px;
-  color: red;
-  font-weight:lighter;
-  font-style: italic;
+  color: #CBD5E1;
+  font-weight: 300;
+  font-size: 1.2rem;
   font-family:"Poppins", sans-serif;
 }
 
@@ -167,28 +187,31 @@ nav ul li a:visited {
   padding-top: 5%;
   width: 100%;
   height: 100%;
-  background-color:#44567c;
+  background-color: #e2e8f0 ;
+  backdrop-filter: blur(8px);
   font-family: "Poppins", sans-serif;
+  
   
 
 }
 #projects h2{
   font-weight: bold;
   font-family:"Raleway",sans-serif;
-  font-size: 42px;
-  color: white;
-  marg
+  font-size: 3rem;
+  color: #374151;
+  text-shadow: 2px 2px 10px rgba(255, 255, 255, 0.1);
+
 
 
 }
 #projects hr {
   height: 3px;
-  width: 610px;
-  background-color:white;
+  width: 700px;
+  background-color: #2e344e;
   border: 0;
   display: flex;
   margin-top: 5px;
-  margin-bottom:40px;
+  margin-bottom:50px;
   justify-self: center;
 }
 
@@ -209,9 +232,17 @@ nav ul li a:visited {
   display:flex;
   flex-direction: column;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
   border-radius: 1px;
   justify-content: space-between;
   
+}
+
+.project-tile:hover {
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transform: scale(1.05);
+  color: #8ac2ff !important;
 }
 
 
@@ -229,9 +260,13 @@ nav ul li a:visited {
     font-size: 19px;
     flex-direction: column;
     justify-content: center;
-    color: white;
     font-family: "Poppins", sans-serif;
-    background-color: #303942;
+    background-color: #2e344e;
+    color: #E2E8F0;
+    font-weight: 500;
+}
+.box p:hover{
+  color: #8ac2ff !important;
 }
 
 .show{
@@ -242,14 +277,19 @@ nav ul li a:visited {
   font-weight: 500;
   font-family: "Poppins", sans-serif;
   height: 45px;
-  color: white;
-  background-color: #303942;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-  border-radius: 2px;
   border: 0;
   width: 125px;
+  background: #38BDF8;
+  color: #FFFFFF;
+  border-radius: 8px;
+  font-weight: bold;
   
   
+}
+.show:hover{
+  background: #0891B2; transform: scale(1.1);
+   transition: all 0.3s ease-in-out;
 }
 .fa-angle-right{  
   position: relative;
@@ -261,12 +301,12 @@ nav ul li a:visited {
   position: relative;
   top:5px;
   margin-right: 5px;
-  color: white;
+  color: #E2E8F0;
   box-shadow: #181c21  1px 3px 5px;
 }
 #socials{
   padding-top:170px;
-  background-color:#303942;
+  background: #0d1626;
   text-align: center;
   overflow: hidden;
 }
@@ -274,12 +314,12 @@ nav ul li a:visited {
 #contact{
   display: flex;
   justify-content: space-evenly;
-  margin: 90px 0 150px 0px;
+  margin: 120px 0 150px 0px;
   overflow: hidden;
   height:70px;
 }
 .sub{
-  color: white;
+  color: #E2E8F0;
   font-size: 20px;
   opacity: 0.7;
   font-style: italic;
@@ -290,7 +330,7 @@ nav ul li a:visited {
 
 .divider{
   margin-top: 100px;
-  border: 2px solid white;
+  border: 2px solid #E2E8F0;
 }
 
 .social{
@@ -303,27 +343,26 @@ nav ul li a:visited {
 }
 .social:hover{
   transform:translateY(3px);
- 
 }
 
 .social i{
   position: relative;
   top: 5px;
-  color: white;
+  color: #E2E8F0;
   margin:0 5px 0 5px;
 }
 .social a {
-  color: white;
+  color:#E2E8F0;
   text-shadow: #181c21  1px 3px 2px ;
 }
 footer{
   
   display:flex;
-  height: 100px;
+  height: 90px;
   justify-content: space-between;
   align-items: center;
   font-size: 18px;
-  color: white;
+  color: #E2E8F0;
   font-family:"Poppins",sans-serif;
   font-weight: 300;
 }
