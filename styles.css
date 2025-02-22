@@ -49,9 +49,7 @@
     width: 20px;
    }
 }
-* {
-  will-change: auto;
-}
+
 a{
   text-decoration: none;
 }
@@ -302,10 +300,14 @@ nav ul li a:visited {
 
 .social img{
   position: relative;
-  top:5px;
+  top:0.2rem;
   margin-right: 5px;
   color: #E2E8F0;
   box-shadow: #181c21  1px 3px 5px;
+}
+.fiverr{
+  display: flexbox;
+  position: relative;
 }
 #socials{
   padding-top:170px;
@@ -339,10 +341,12 @@ nav ul li a:visited {
 .social{
   font-size: 27px;
   font-weight: bold;
-  display: inline-block;
+  display: flex;
+  align-items: center;
   position: relative;
   transition: transform 0.3s ease-in-out;
-  
+
+
 }
 .social:hover{
   transform:translateY(3px);
