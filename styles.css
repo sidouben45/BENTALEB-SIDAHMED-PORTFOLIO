@@ -13,8 +13,10 @@
   }
 }
 @media (max-width:350px) {
+  nav h1{
+    width: 60% !important;
+  }
   #socials div h1{
-
     font-size: 2.5rem !important;
     padding-bottom: 10px !important;
    }
@@ -24,6 +26,17 @@
   .fiverricon{
     width: 14px !important;
     top: 5px !important;
+  }
+}
+@media (max-width:500px)and (min-width:50px) {
+  nav ul {
+    margin: 0 !important;
+    margin-right: 1px !important;
+  }
+  #title{
+    display:contents !important;
+    justify-content: center !important;
+    line-height:0px !important;
   }
 }
 @media (max-width:500px)and (min-width:350px) {
@@ -138,22 +151,24 @@ header{
   top: 0;
   width: 100vw;
   height: 10vh;
-  margin: 0;
+  
 
 }
 
 nav h1{
+  padding-left: 5px;
   margin-left: 25px;
-  width: 75%;
+  width:70%;
   font-size: 28px;
   font-family: "Poppins", sans-serif;
   text-shadow: #070809 1px 5px 5px;
 }
 #title{
+  
   color: #E2E8F0;
   
 }
-#logo{
+/* #logo{
   width: 30px;
   height: 30px;
   display: inline-block;
@@ -162,7 +177,7 @@ nav h1{
   top: 3px;
   justify-content: flex-start;
   overflow: hidden;
-}
+} */
 
 
 #navbar {
@@ -177,6 +192,7 @@ nav h1{
   width: 100%;
   margin: 0;
   overflow: hidden;
+  
 }
 
 
