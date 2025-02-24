@@ -7,7 +7,78 @@
   scroll-behavior:smooth;
 }
 
-@media (max-width:700px){
+@media (prefers-reduced-motion: no-preference) {
+  * {
+    scroll-behavior: smooth;
+  }
+}
+@media (max-width:350px) {
+  #socials div h1{
+
+    font-size: 2.5rem !important;
+    padding-bottom: 10px !important;
+   }
+  .social p{
+    font-size:15px !important;
+  }
+  .fiverricon{
+    width: 14px !important;
+    top: 5px !important;
+  }
+}
+@media (max-width:500px)and (min-width:350px) {
+  .social{
+    margin: 0 5px 0 5px !important;
+  }
+  .social p{
+    display:block !important;
+    height: auto !important;
+    font-size: 16px !important;
+    
+   }
+   .social i {
+    display: block !important;
+    justify-content: center;
+    margin-bottom: 5px !important;
+   }
+   .fiverricon{
+    display: block;
+    justify-self: center;
+    width: 15px !important;
+    margin-bottom: 6px !important;
+    top:5px !important;
+    
+   }
+}
+
+@media (min-width:500px) and (max-width:650px) {
+  .social p{
+    font-size: 20px !important;
+  }
+  .social i{
+    top: 4px !important;
+  }
+  .fiverricon{
+    width: 18px !important;
+    top: 2px !important;
+  }
+}
+@media (min-width:650px) and (max-width:800px) {
+  .social{
+    height: 120px !important;
+    font-size: 24px !important;
+    margin:0 10px 0 10px ;
+   }
+   .fiverricon{
+    width:21px !important;
+    top: 2px !important;
+   }
+   .social i {
+    top: 4px !important;
+   }
+}
+@media (max-width:800px){
+  
    #navbar h1{
    font-size: 18px !important;
    text-align: center;
@@ -26,9 +97,7 @@
    #projects h2 {
     font-size: 2rem !important;
    }
-   .social{
-    height: 100px;
-   }
+   
    #projects{
     padding:0 30px 0 30px;
    }
@@ -41,13 +110,7 @@
    footer p{
     font-size: 15px;
    }
-   .social{
-    margin: 0px;
-    font-size: 20px !important;
-   }
-   .social img{
-    width: 20px;
-   }
+   
 }
 
 a{
@@ -90,7 +153,16 @@ nav h1{
   color: #E2E8F0;
   
 }
-
+#logo{
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  margin-right: 10px;
+  position: relative;
+  top: 3px;
+  justify-content: flex-start;
+  overflow: hidden;
+}
 
 
 #navbar {
@@ -104,7 +176,7 @@ nav h1{
   align-items: center;
   width: 100%;
   margin: 0;
-  
+  overflow: hidden;
 }
 
 
@@ -305,10 +377,7 @@ nav ul li a:visited {
   color: #E2E8F0;
   box-shadow: #181c21  1px 3px 5px;
 }
-.fiverr{
-  display: flexbox;
-  position: relative;
-}
+
 #socials{
   padding-top:170px;
   background: #0d1626;
@@ -341,11 +410,16 @@ nav ul li a:visited {
 .social{
   font-size: 27px;
   font-weight: bold;
-  display: flex;
+  display: block;
+  justify-content: space-evenly;
+  height: auto;
   align-items: center;
   position: relative;
   transition: transform 0.3s ease-in-out;
-
+  font-family: "Poppins" ,sans-serif;
+  font-weight: 500; 
+  flex-wrap: wrap;
+  overflow: hidden;
 
 }
 .social:hover{
