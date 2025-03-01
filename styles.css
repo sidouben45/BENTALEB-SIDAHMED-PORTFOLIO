@@ -239,7 +239,13 @@ nav ul li a:visited {
 
 
 
+/* #backimg{
+  position:absolute;
+  width: 850px;
 
+  z-index: 0;
+  opacity:10%;
+} */
 #welcome-section{
   padding: 0;
   margin: 0 ;
@@ -255,6 +261,7 @@ nav ul li a:visited {
   text-align: center;
 }
 #welcome-section h1 ,#socials h1{
+  z-index: 1;
   padding: 0;
   font-size:4rem;
   font-weight: 800;
@@ -265,6 +272,7 @@ nav ul li a:visited {
 
 }
 #welcome-section p{
+  z-index: 1;
   color: #CBD5E1;
   font-weight: 300;
   font-size: 1.2rem;
