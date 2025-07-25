@@ -1,124 +1,351 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BENTALEB SIDAHMED</title>
-  <link rel="stylesheet" href="styles.css">
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Fira+Code:wght@400;500&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
-</head> 
-<body>
-  <button id="scroll">
-    <i class="fas fa-chevron-up"></i>
-  </button>
-  <header>
-    <nav id="navbar">  
-      <h1><a id="title" href="">
-        <!-- <img id="logo" src="logo.png" alt=""> -->
-        BENTALEB SIDAHMED</a></h1>
-      <ul>
-        <li><a href="#welcome-section">About</a></li>
-        <li><a href="#projects">Work</a></li>
-        <li><a href="#socials">Contact</a></li>
-      </ul>
-    </nav>  
-</header>
+    <!-- Map box-->
+     <head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />     <link href="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.css" rel="stylesheet">
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+     <script src="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.js"></script>
 
-  <div id="welcome-section">
-    <!-- <img src="logogray.png" id="backimg" alt="background"> -->
-    <h1>Hey I am Sidou</h1>
-    <p>a web developer</p>
+    <title>BENTALEB SIDAHMED - Front-end Developer</title>
+</head>
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="80" tabindex="0">
+    <!------------------------------ NAVBAR----------------------------->
+<nav class="navbar navbar-expand-sm fixed-top navbar-dark">
+    <div class="container">
+        <a href="#" class="navbar-brand">
+    <img src="my-logo.png" alt="Logo" class="logo-img" />
+        </a>
+
+
+        <button
+         class="navbar-toggler noborder nofocus "
+         type="button"
+         data-bs-toggle="collapse"
+         data-bs-target="#navmenu">
+         
+         <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navmenu">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link active">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link active">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link active">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contacts" class="nav-link active">Contacts</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+<!-------------------------------------- show case ------------------------>
+<section id="home" class="text-light p-5 p-lg-0 pt-lg-5  text-center text-md-start section-1">
+    <div class="container home-container">
+        <div class="d-md-flex justify-content-between ">
+            <div class="align-items-center justify-content-center">
+                <h1 class="home-title pt-lg-5">BENTALEB SIDAHMED</h1>
+                <span class="h4 dynamic-text"></span>
+                <br>
+                <a href="#contacts" class="btn btn-warning btn-lg mt-4 fw-semibold shadow">
+                Hire Me
+                </a>
+            </div>
+            <img src="undraw_designer_efwz.svg" alt="web-developer" srcset=""  class="img-fluid w-50 d-none d-md-block" id="first-img">
+        </div>
+    </div>
+</section>
+
+
+<!-- email-->
+<section class="text-light p-5 under-laptop ">
+    <div class="container ">
+        <div class="d-md-flex justify-content-between align-items-center">
+            </div>
+        </div>
+        
+    </div>
+    
+</section>
+
+<!-- boxes-->
+<section id="skills" class="p-5 section-2">
+    <div class="container">
+        <h1 class="text-center pb-5 text-light mt-4 fw-bold">Skills & Expertise
+</h1>
+        <div class="row text-center gy-4">
+            <div class="col-md">
+                <div class="card h-100">
+                     <div class="card-body">
+                        <div class="h1 mb-3">
+                           <i class="fa-brands fa-html5"></i>
+                        </div>
+                        <h3 class="card-title mb-3">HTML</h3>   
+                        <p class="text-muted">Built semantic, SEO-ready layouts</p>
+
+                     </div>
+                </div>
+            </div>
+            
+            <div class="col-md">
+                <div class="card h-100">
+                     <div class="card-body">
+                        <div class="h1 mb-3">
+                           <i class="fa-brands fa-css3-alt"></i>
+                        </div>
+                        <h3 class="card-title mb-3">CSS</h3>
+                        <p class="text-muted">Styled responsive designs using Flexbox & Grid</p>
+
+                          </div>
+                </div>
+            </div>
+            
+            <div class="col-md">
+                <div class="card h-100">
+                     <div class="card-body">
+                        <div class="h1 mb-3">
+                           <i class="fa-brands fa-js"></i>
+                        </div>
+                        <h3 class="card-title mb-3">JAVASCRIPT</h3>
+                        <p class="text-muted">Built interactive features like sliders and modals</p>
+
+                               </div>
+                </div>
+            </div>
+            <div class="col-lg">
+                <div class="card h-100">
+                     <div class="card-body">
+                        <div class="h1 mb-3">
+                           <i class="fa-brands fa-bootstrap"></i>
+                        </div>
+                        <h3 class="card-title mb-3">BOOTSTRAP</h3>
+                        <p class="text-muted">Built fast, responsive layouts with Bootstrap 5</p>
+
+                         </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container pt-lg-5 text-light">
+        <div class="row align-items-center justify-content-between">
+            <div class="col-md  ">
+                <img class="img-fluid mid-image d-none d-lg-block" src="undraw_certificate_71gt.svg" alt="">
+            </div>
+             <div class="col-lg p-5 ">
+                  <div class="container text-white">
+    <h2 class="m-5 fw-bold text-center">Certifications</h2>
+    <div class="card bg-dark border border-gradient text-white ">
+      <div class="card-body">
+        <h4 class="card-title">Responsive Web Design</h4>
+        <p class="card-text text-secondary my-4">
+          Earned from freeCodeCamp. Covers HTML, CSS, Flexbox, Grid, and responsive layouts.
+        </p>
+        <a href="https://www.freecodecamp.org/certification/BENTALEBSIDAHMED/responsive-web-design" target="_blank" class="btn btn-outline-light btn-sm">
+          View Certificate
+        </a>
+      </div>
+    </div>
   </div>
-  <div id="projects">
-    <h2>These are some of my projects</h2>
-    <hr>
-    <div id="gallery">
-      <a class="box" target="_blank" href="https://sidouben45.github.io/landing-page/">
-          <div class="project-tile">
-            <div><img src="landing-page2.png" loading="lazy" alt="landing page"></div>
-            <p>Landing Page</p>
-          </div>
-      </a>
+             </div>
+        </div>
+    </div>
+</section>
 
-      <a class="box" target="_blank" href="https://sidouben45.github.io/documentation/">
-          <div class="project-tile">
-            <div><img src="documentation.png" loading="lazy" alt="documentation"></div>
-            <p>Documentation</p>
-          </div>
-      </a>
+<!-- Portfolio Website Using Bootstrap -->
 
-      <a class="box" target="_blank" href="https://sidouben45.github.io/registration-form/">
-          <div class="project-tile">
-            <div><img src="form.png"  loading="lazy" alt="registration form"></div>
-            <p>Registration Form</p>
-          </div>
-      </a>
+<section id="projects" class="py-5 bg-dark text-white">
+  <div class="container text-center pb-5">
+    <h1 class="mt-4 fw-bold">What I've Built</h1>
+    <p class="text-secondary mb-5">
+      Here are some of the websites and applications I've built. Each one reflects my focus on responsive design, clean code, and good user experience.
+    </p>
 
-      <a class="box" target="_blank" href="https://sidouben45.github.io/survey-form/">
-      <div class="project-tile">
-        <div><img src="survey.png"  loading="lazy" alt="survey form"></div>
-        <p>Survey Form</p>
+    <!-- Perfect responsive grid + spacing -->
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-4">
+
+      <!-- Card 1 -->
+      <div class="col">
+        <a href="https://sidouben45.github.io/landing-page/" target="_blank"
+           class="card h-100 rounded-4 overflow-hidden shadow-sm text-decoration-none text-white position-relative project-card">
+          
+          <!-- Keep a fixed aspect ratio, image always covers -->
+          <div class="ratio ratio-16x9">
+            <img src="landing-page2.png" class="w-100 h-100 object-fit-cover" alt="LANDING PAGE">
+          </div>
+
+          <!-- Gradient overlay with content -->
+          <div class="project-overlay">
+            <h5 class="mb-2 fw-semibold">LANDING PAGE</h5>
+            <div class="d-flex flex-wrap gap-2 justify-content-center small">
+              <span class="badge bg-secondary">HTML</span>
+              <span class="badge bg-secondary">CSS</span>
+            </div>
+          </div>
+        </a>
       </div>
 
-      </a>
-      <a class="box" target="_blank" href="https://sidouben45.github.io/journey/">
-          <div class="project-tile">
-            <div><img src="journey.png" loading="lazy"  alt="my development journey"></div>
-            <p>Magazine / Journey</p>
+      <!-- Card 2 -->
+      <div class="col">
+        <a href="https://sidouben45.github.io/BENTALEB-SIDAHMED-PORTFOLIO/" target="_blank"
+           class="card h-100 rounded-4 overflow-hidden shadow-sm text-decoration-none text-white position-relative project-card">
+          <div class="ratio ratio-16x9">
+            <img src="portfolio.png" class="w-100 h-100 object-fit-cover" alt="PORTFOLIO WEBSITE">
           </div>
-      </a>
-
-      <a class="box" target="_blank" href="https://sidouben45.github.io/Nutrition-label/">
-          <div class="project-tile">
-            <div><img src="nutrition-label.png" loading="lazy" alt="Nutrition label"></div>
-            <p>Nutrition label</p> 
+          <div class="project-overlay">
+            <h5 class="mb-2 fw-semibold">PORTFOLIO WEBSITE</h5>
+            <div class="d-flex flex-wrap gap-2 justify-content-center small">
+              <span class="badge bg-secondary">HTML</span>
+              <span class="badge bg-secondary">CSS</span>
+              <span class="badge bg-secondary">JAVASCRIPT</span>
+            </div>
           </div>
-     </a>
-      
-     <a class="box" target="_blank" href="https://sidouben45.github.io/Quizz/">
-        <div class="project-tile">
-          <div><img src="quizz.png" loading="lazy" alt="Quizz"></div>
-          <p>Quizz</p>
-        </div>
-     </a>
+        </a>
+      </div>
 
-     <a class="box" target="_blank" href="https://sidouben45.github.io/Penguin-Animation/">
-        <div class="project-tile">
-          <div><img src="penguin.png" loading="lazy" alt="Penguin Animation"></div>
-          <p>Penguin Animation</p>
-        </div>
-        <div class="empty"></div>
-        </div>
-     </a>
+      <!-- Card 3 -->
+      <div class="col">
+        <a href="https://sidouben45.github.io/PRODUCT-MANAGEMENT-SYSTEM/" target="_blank"
+           class="card h-100 rounded-4 overflow-hidden shadow-sm text-decoration-none text-white position-relative project-card">
+          <div class="ratio ratio-16x9">
+            <img src="cruds.png" class="w-100 h-100 object-fit-cover" alt="PRODUCT MANAGEMENT SYSTEM">
+          </div>
+          <div class="project-overlay">
+            <h5 class="mb-2 fw-semibold">PRODUCT MANAGEMENT SYSTEM</h5>
+            <div class="d-flex flex-wrap gap-2 justify-content-center small">
+              <span class="badge bg-secondary">HTML</span>
+              <span class="badge bg-secondary">CSS</span>
+              <span class="badge bg-secondary">JAVASCRIPT</span>
+            </div>
+          </div>
+        </a>
+      </div>
 
-    <a href="https://github.com/sidouben45" target="_blank"><button class="show">Show all 
-      <i class="fa-solid fa-angle-right"></i></button></a>
-  </div>  
-  <div id="socials">
-    <div>
-      <h1>Let's work together...</h1>
-      <p class="sub">How do you take your coffee?</p>
+      <!-- Card 4 -->
+      <div class="col">
+        <a href="https://sidouben45.github.io/survey-form/" target="_blank"
+           class="card h-100 rounded-4 overflow-hidden shadow-sm text-decoration-none text-white position-relative project-card">
+          <div class="ratio ratio-16x9">
+            <img src="survey.png" class="w-100 h-100 object-fit-cover" alt="SURVEY FORM">
+          </div>
+          <div class="project-overlay">
+            <h5 class="mb-2 fw-semibold">SURVEY FORM</h5>
+            <div class="d-flex flex-wrap gap-2 justify-content-center small">
+              <span class="badge bg-secondary">HTML</span>
+              <span class="badge bg-secondary">CSS</span>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="col">
+        <a href="https://sidouben45.github.io/journey/" target="_blank"
+           class="card h-100 rounded-4 overflow-hidden shadow-sm text-decoration-none text-white position-relative project-card">
+          <div class="ratio ratio-16x9">
+            <img src="journey.png" class="w-100 h-100 object-fit-cover" alt="MAGAZINE / JOURNEY">
+          </div>
+          <div class="project-overlay">
+            <h5 class="mb-2 fw-semibold">MAGAZINE / JOURNEY</h5>
+            <div class="d-flex flex-wrap gap-2 justify-content-center small">
+              <span class="badge bg-secondary">HTML</span>
+              <span class="badge bg-secondary">CSS</span>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <!-- Card 6 -->
+      <div class="col">
+        <a href="https://sidouben45.github.io/landing-page/" target="_blank"
+           class="card h-100 rounded-4 overflow-hidden shadow-sm text-decoration-none text-white position-relative project-card">
+          <div class="ratio ratio-16x9">
+            <img src="quizz.png" class="w-100 h-100 object-fit-cover" alt="QUIZZ">
+          </div>
+          <div class="project-overlay">
+            <h5 class="mb-2 fw-semibold">QUIZZ</h5>
+            <div class="d-flex flex-wrap gap-2 justify-content-center small">
+              <span class="badge bg-secondary">HTML</span>
+              <span class="badge bg-secondary">CSS</span>
+            </div>
+          </div>
+        </a>
+      </div>
+
     </div>
-    <div id="contact">
-      <div class="social"><a id="profile-link" target="_blank" href="https://www.upwork.com/freelancers/~01e06eaf898a064ae1"><p><i class="fa-brands fa-upwork"></i>Upwork</p></a></div>
-      <div class="social"><a id="profile-link" target="_blank" href="https://www.fiverr.com/s/gDjeazv"><p class="fiverr"><img class="fiverricon" loading="lazy" src="fiverr.png" width="23.5rem" alt="fiver icon">Fiverr</p></a></div> 
-      <div class="social"><a id="profile-link" target="_blank" href="https://www.linkedin.com/in/sid-ahmed-bentaleb-b73154241/"><p><i class="fa-brands fa-linkedin"></i>Linkedin</p></a></div>
-      <div class="social"><a id="profile-link" target="_blank" href="https://x.com/bentaleb_sidou"><p><i class="fa-brands fa-square-x-twitter"></i>Twitter</p></a></div>
-      <div class="social"><a id="profile-link" href="mailto:sidahmed20171@gmail.com"><p><i class="fa-solid fa-at"></i>Mail</p></a></div>
-        
-      
-      
-    </div>
-    <hr class="divider">
-    <footer>
-      <p>Thank you for visiting my portfolio.</p>
-      <p class="lastp">© 2025 BENTALEB/SIDAHMED. All rights reserved.
-      </p>
-    </footer>
   </div>
-  <script src="console.js"></script>
+</section>
+
+
+
+<!-- CONTACT INFO -->
+<section id="contacts" class="p-5 section-4">
+   <div class="contact-container ">
+  <div class="header-section text-center py-5">
+    <h1 class=" text-light fw-bold contacts-title">Let's Collaborate</h1>
+    <p class="lead">Get in touch or explore my work</p>
+  </div>
+  <div class="row">
+    <div class="col-12 col-md-6">
+      <h2 class="mb-4">My Contacts</h2>
+      <div class="contact-item d-flex align-items-center mb-3">
+        <i class="fas fa-envelope me-3"></i>
+        <a href="mailto:dev.bentaleb@gmail.com">Email</a>
+      </div>
+      <div class="contact-item d-flex align-items-center mb-3">
+        <i class="fab fa-linkedin me-3"></i>
+        <a href="https://www.linkedin.com/in/sid-ahmed-bentaleb-b73154241/" target="_blank">LinkedIn</a>
+      </div>
+      <div class="contact-item d-flex align-items-center mb-3">
+        <i class="fab fa-github me-3"></i>
+        <a href="https://github.com/sidouben45" target="_blank">Git Hub</a>
+      </div>
+      <div class="contact-item d-flex align-items-center mb-3">
+          <i class="fas fa-link me-2"></i>
+          <a href="https://linktr.ee/yourusername" target="_blank">More Links</a>
+      </div>
+      <div class="contact-item d-flex align-items-center mb-3">
+        <i class="fas fa-phone me-2"></i>
+         <a href="https://wa.me/qr/5L3FEE3EFC4QP1" target="_blank">Phone</a>
+      </div>
+    </div>
+    <div class="col-12 col-md-6">
+      <h2 class="mb-4">Download Resume</h2>
+      <p class="mb-4 text-secondary">Want to learn more about my experience and qualifications? Download my resume for a comprehensive overview of my skills and work history.</p>
+      <a href="CV.pdf" download class="resume-button btn">↓ Download Resume (PDF)</a>
+      <p class="last-updated mt-3">Last updated: July 24, 2025, 04:33 AM CET</p>
+    </div>
+  </div>
+  <div class="divider"></div>
+</div>
+</section>
+
+<!-- FOOTER -->
+<footer class="p-4 text-light text-center position-relative">
+  <div class="container">
+    <p class="lead">&copy; 2025 Sid Ahmed | Front-End Developer</p>
+    <!-- <a href="#" class="position-absolute bottom-0 end-0 p-5 align-items-center">
+      <i class="bi bi-arrow-up-circle h1"></i>
+    </a> -->
+  </div>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
